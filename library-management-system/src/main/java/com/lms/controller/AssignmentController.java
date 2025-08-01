@@ -25,7 +25,7 @@ public class AssignmentController {
     }
 
     @GetMapping("/courses/{courseId}")
-    public List<Assignment> getAssignmentsByCourse(@PathVariable Long courseId) {
+    public List< Assignment> getAssignmentsByCourse(@PathVariable Long courseId) {
         return assignmentService.getAssignmentsByCourse(courseId);
     }
 
